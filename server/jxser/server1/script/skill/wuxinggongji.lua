@@ -13,6 +13,10 @@ if (levelname == "attackrating_p") then
 return Getackrating_p(level)
 end;
 
+if (levelname == "seriesdamage_p") then
+return Getseriesdamage_p(level)
+end;
+
 str1 = ""
 return str1
 end;
@@ -22,11 +26,16 @@ return Param1..","..Param2..","..Param3
 end;
 
 function Getphysicsdamage_v(level)
-result =1
+result =100+25*level
 return Param2String(result,0,result)
 end;
 
 function Getackrating_p(level)
-result = 1
+result = 100+5*level
+return Param2String(result,0,0)
+end;
+
+function Getseriesdamage_p(level)
+result = 30+floor(level/2)
 return Param2String(result,0,0)
 end;

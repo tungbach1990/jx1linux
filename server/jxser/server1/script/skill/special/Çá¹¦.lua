@@ -13,6 +13,6 @@ return Param1..","..Param2..","..Param3
 end;
 
 function Getskill_cost_v(level)
-result = 50
+result = 1
 return Param2String(result,0,0)
 end;

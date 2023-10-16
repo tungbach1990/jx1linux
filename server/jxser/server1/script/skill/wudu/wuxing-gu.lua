@@ -1,8 +1,8 @@
 function GetSkillLevelData(levelname, data, level)
 
---if (levelname == "poisondamage_v") then
---return Getpoisondamage_v(level)
---end;
+if (levelname == "poisondamage_v") then
+return Getpoisondamage_v(level)
+end;
 
 if (levelname == "fastwalkrun_p") then
 return Getfastwalkrun_p(level)
@@ -24,12 +24,12 @@ function Param2String(Param1, Param2, Param3)
 return Param1..","..Param2..","..Param3
 end;
 
---function Getpoisondamage_v(level)
---result1 = 5+level
---result2 = 20
---result3 = 25
---return Param2String(result1,result2,result3)
---end;
+function Getpoisondamage_v(level)
+result1 = 5+level
+result2 = 20
+result3 = 25
+return Param2String(result1,result2,result3)
+end;
 
 function Getfastwalkrun_p(level)
 result1 = -5-level
